@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  book: one
+  retailers: one
+  first_name: MyString
+  last_name: MyString
+  street: MyString
+  city: MyString
+  state: MyString
+  zip: MyString
+  card_number: MyString
+  card_cv: MyString
+  card_exp: 2017-12-12 09:39:56
+
+two:
+  book: two
+  retailers: two
+  first_name: MyString
+  last_name: MyString
+  street: MyString
+  city: MyString
+  state: MyString
+  zip: MyString
+  card_number: MyString
+  card_cv: MyString
+  card_exp: 2017-12-12 09:39:56
