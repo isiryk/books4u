@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Book:</strong>
+  <%= @retailer.book %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @retailer.price %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @retailer.name %>
+</p>
+
+<p>
+  <strong>Shipping cost:</strong>
+  <%= @retailer.shipping_cost %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @retailer.price %>
+</p>
+
+<%= link_to 'Edit', edit_retailer_path(@retailer) %> |
+<%= link_to 'Back', retailers_path %>
