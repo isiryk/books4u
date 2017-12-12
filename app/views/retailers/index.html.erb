@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Retailers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Book</th>
+      <th>Price</th>
+      <th>Name</th>
+      <th>Shipping cost</th>
+      <th>Price</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @retailers.each do |retailer| %>
+      <tr>
+        <td><%= retailer.book %></td>
+        <td><%= retailer.price %></td>
+        <td><%= retailer.name %></td>
+        <td><%= retailer.shipping_cost %></td>
+        <td><%= retailer.price %></td>
+        <td><%= link_to 'Show', retailer %></td>
+        <td><%= link_to 'Edit', edit_retailer_path(retailer) %></td>
+        <td><%= link_to 'Destroy', retailer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Retailer', new_retailer_path %>
