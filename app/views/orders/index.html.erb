@@ -6,7 +6,7 @@
   <thead>
     <tr>
       <th>Book</th>
-      <th>Retailers</th>
+      <th>Retailer</th>
       <th>First name</th>
       <th>Last name</th>
       <th>Street</th>
@@ -24,7 +24,7 @@
     <% @orders.each do |order| %>
       <tr>
         <td><%= order.book %></td>
-        <td><%= order.retailers %></td>
+        <td><%= order.retailer %></td>
         <td><%= order.first_name %></td>
         <td><%= order.last_name %></td>
         <td><%= order.street %></td>

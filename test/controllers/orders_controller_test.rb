@@ -17,7 +17,7 @@ class OrdersControllerTest < ActionDispatch::IntegrationTest
 
   test "should create order" do
     assert_difference('Order.count') do
-      post orders_url, params: { order: { book_id: @order.book_id, card_cv: @order.card_cv, card_exp: @order.card_exp, card_number: @order.card_number, city: @order.city, first_name: @order.first_name, last_name: @order.last_name, retailers_id: @order.retailers_id, state: @order.state, street: @order.street, zip: @order.zip } }
+      post orders_url, params: { order: { book_id: @order.book_id, card_cv: @order.card_cv, card_exp: @order.card_exp, card_number: @order.card_number, city: @order.city, first_name: @order.first_name, last_name: @order.last_name, retailer_id: @order.retailer_id, state: @order.state, street: @order.street, zip: @order.zip } }
     end
 
     assert_redirected_to order_url(Order.last)
@@ -34,7 +34,7 @@ class OrdersControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update order" do
-    patch order_url(@order), params: { order: { book_id: @order.book_id, card_cv: @order.card_cv, card_exp: @order.card_exp, card_number: @order.card_number, city: @order.city, first_name: @order.first_name, last_name: @order.last_name, retailers_id: @order.retailers_id, state: @order.state, street: @order.street, zip: @order.zip } }
+    patch order_url(@order), params: { order: { book_id: @order.book_id, card_cv: @order.card_cv, card_exp: @order.card_exp, card_number: @order.card_number, city: @order.city, first_name: @order.first_name, last_name: @order.last_name, retailer_id: @order.retailer_id, state: @order.state, street: @order.street, zip: @order.zip } }
     assert_redirected_to order_url(@order)
   end
 
