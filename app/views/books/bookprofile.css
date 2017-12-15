@@ -1,0 +1,24 @@
+.padding {
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.cellpadding {
+  padding-bottom: 15px;
+}
+
+.centeringstuff {
+  text-align: center
+}
+
+.imgstuff {
+    display: block;
+    margin: auto;
+    width: 40%;
+}
+
+.rating > span:hover:before {
+   content: "\2605";
+   position: absolute;
+}
